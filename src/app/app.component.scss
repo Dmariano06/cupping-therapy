@@ -1,11 +1,11 @@
 nav:hover{
   background-color: #facc36 !important;
-  a, .fa, .btn{
+  a, .fa, #rdv{
     color: #212529 !important;
-    .btn{
+    #rdv{
       border: 1px solid #212529 !important;
     }
-    .btn:hover{
+    #rdv:hover{
       background-color: #212529 !important;
       color: white !important;
     }
@@ -44,13 +44,16 @@ nav:hover{
 .fa:hover{
   color: #606c79 !important;
 }
-.btn{
+#fa{
+  font-size: 25px;
+}
+#rdv{
   background: transparent !important;
   border: 1px solid white !important;
   border-radius: 0px !important;
   padding: 15px;
 }
-.btn:hover{
+#rdv:hover{
   background: #facc36 !important;
   border: 1px solid transparent !important;
 }
