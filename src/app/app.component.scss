@@ -1,0 +1,78 @@
+nav:hover{
+  background-color: #facc36 !important;
+  a, .fa, .btn{
+    color: #212529 !important;
+    .btn{
+      border: 1px solid #212529 !important;
+    }
+    .btn:hover{
+      background-color: #212529 !important;
+      color: white !important;
+    }
+  }
+}
+.navbar-toggler{
+  background-color: transparent !important;
+}
+#contact{
+  background-color: #212529 !important;
+}
+@media (min-width: 1000px) {
+  .navbar {
+    transition: all 0.2s ease;
+    height:8%;
+  }
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: all 0.2s ease !important;
+   height:8%;
+}
+
+.navbar-colored {
+  background-color: #212529 !important;
+  transition: all 0.4s !important; 
+}
+}
+#tel{
+  color: #2a2e32;
+ 
+
+}
+.fa{
+  color: #facc36 !important;
+}
+.fa:hover{
+  color: #606c79 !important;
+}
+.btn{
+  background: transparent !important;
+  border: 1px solid white !important;
+  border-radius: 0px !important;
+  padding: 15px;
+}
+.btn:hover{
+  background: #facc36 !important;
+  border: 1px solid transparent !important;
+}
+#link-contact{
+  color: white !important;
+  font-size: 25px;
+  text-decoration-thickness: 3px;
+}
+
+.intro-lead-in{
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+  font-weight: bold
+}
+.adresse{
+  text-align: start ;
+}
+.end{
+  font-size: 18px;
+}
+@media (min-width:650px) {
+  #signature{
+    display: none;
+  }
+}
