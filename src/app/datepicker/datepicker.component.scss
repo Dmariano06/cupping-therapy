@@ -1,7 +1,9 @@
 label{
-    text-align: center;
+  
     color: white;
     padding: 10px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
 }
 form{
     align-items: center;
@@ -10,6 +12,27 @@ form{
 }
 .form-control{
     margin: auto;
-    text-align: center;
-    width: 500px;
+    width: 400px;
+}
+::placeholder{
+    color:#8b741e !important;
+    opacity: 0.5;
+}
+input{
+    font-weight: bold;
+    color: #8b741e !important;
+}
+.message{
+    ::placeholder{
+    opacity: 0.2 !important;
+    }
+}
+.btn{
+    margin: 2%;
+    background-color: #8b741e;
+    color: white;
+    border: #8b741e;
+}
+.btn:hover{
+    background-color: #facc36;
 }

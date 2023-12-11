@@ -96,19 +96,6 @@ p{
 .end{
   font-size: 18px;
 }
-.parallax{
-  height: 1200px; 
-  background-attachment: fixed; /* Fixe l'image pendant le scroll */
-background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
-background-position: center; /* Centre la position de l'image */
-background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
-}
-.parallax1 {
-  background-image: url("https://www.codeur.com/tuto/wp-content/uploads/2022/02/p1.jpg");
-}
-.parallax2 {
-  background-image: url("https://www.codeur.com/tuto/wp-content/uploads/2022/02/p1.jpg");
-}
 @media (min-width:650px) {
   #signature{
     display: none;

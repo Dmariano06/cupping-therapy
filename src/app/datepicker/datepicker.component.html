@@ -1,29 +1,29 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div>
-    <label for="firstName">Prénom:</label>
-    <input class="form-control" id="firstName" type="text" formControlName="firstName" required />
+    <label for="firstName"></label>
+    <input class="form-control" id="firstName" placeholder="Prénom:" type="text" formControlName="firstName" required />
   </div>
   <div>
-    <label for="lastName">Nom:</label>
-    <input class="form-control" id="lastName" type="text" formControlName="lastName" required />
+    <label for="lastName"></label>
+    <input class="form-control" id="lastName" type="text" placeholder="Nom:" formControlName="lastName" required />
   </div>
   <div>
-    <label for="email">E-mail:</label>
-    <input class="form-control" id="email" type="email" formControlName="email" required />
+    <label for="email"></label>
+    <input class="form-control" id="email" type="email" placeholder="E-mail:" formControlName="email" required />
   </div>
   <div>
     <div>
-      <label for="selectedDate">Date:</label>
-      <input id="selectedDate" class="form-control" type="date" formControlName="selectedDate" required />
+      <label for="selectedDate">Séléctionez une date:</label>
+      <input id="selectedDate" class="form-control" placeholder="Date:"type="date" formControlName="selectedDate" required />
     </div>
     <div>
-        <label for="selectedTime">Heure:</label>
+        <label for="selectedTime">Choisissez une horaire (9h-19h):</label>
         <input  class="form-control" id="selectedTime" type="time" formControlName="selectedTime" required />
       </div>
   </div>
   <div>
-    <label for="message">Message:</label>
-    <textarea class="form-control" id="message" formControlName="message" rows="6" required></textarea>
+    <label class="message" for="message"></label>
+    <textarea class="form-control" id="message" formControlName="message" placeholder="Ajoutez des détails supplémentaires ou des demandes spéciales ici . . .(facultatif)" rows="6" required></textarea>
   </div>
   <div>
     <button class="btn btn-primary btn-xl text-uppercase" type="submit" [disabled]="!form.valid">Envoyer</button>
