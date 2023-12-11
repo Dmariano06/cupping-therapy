@@ -24,8 +24,8 @@ export class DatepickerComponent {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       selectedDate: ['', Validators.required],
-      selectedTime: ['',[ Validators.required, this.timeRangeValidator('09:00', '19:00')]],
-      message: ['', Validators.required],
+      selectedTime: ['', Validators.required],
+      message: [''],
     });
   }
   minTime = '09:00';
@@ -63,7 +63,7 @@ export class DatepickerComponent {
      
       
     }
-   window.alert('Votre message a été envoyé avec succès ! Vous allez recevoir un mail de confirmation dans quelques instants. (Regardez bien vos spams) Nous recontacterons sous 24h pour la confirmation du rendez-vous');
+   window.alert('Votre message a été envoyé avec succès ! Vous recevrez un courriel de confirmation dans quelques instants (veuillez vérifier vos spams). Nous vous recontacterons dans les 24 heures pour confirmer le rendez-vous.');
    window.location.reload();
   }
 }
