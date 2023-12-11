@@ -36,3 +36,9 @@ input{
 .btn:hover{
     background-color: #facc36;
 }
+@media (max-width: 600px) {
+    .form-control{
+        width: 80%;
+    }
+    
+}
