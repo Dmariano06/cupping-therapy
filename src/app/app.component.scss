@@ -14,8 +14,14 @@ nav:hover{
 .navbar-toggler{
   background-color: transparent !important;
 }
+h4{
+  font-weight: bold;
+}
 #contact{
   background-color: #212529 !important;
+}
+.euro{
+  color: #facc36;
 }
 @media (min-width: 1000px) {
   .navbar {
@@ -38,6 +44,9 @@ nav:hover{
  
 
 }
+p{
+  letter-spacing: 1px !important;
+}
 .fa{
   color: #facc36 !important;
 }
@@ -57,10 +66,23 @@ nav:hover{
   background: #facc36 !important;
   border: 1px solid transparent !important;
 }
+.text-muted{
+  font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  letter-spacing: 1px; 
+}
 #link-contact{
-  color: white !important;
+
   font-size: 25px;
+ color:#facc36 !important;
   text-decoration-thickness: 3px;
+  letter-spacing: 3px;
+}
+#link-contact:hover{
+
+  font-size: 25px;
+ color:white !important;
+  text-decoration-thickness: 3px;
+  letter-spacing: 3px;
 }
 
 .intro-lead-in{
@@ -73,6 +95,19 @@ nav:hover{
 }
 .end{
   font-size: 18px;
+}
+.parallax{
+  height: 1200px; 
+  background-attachment: fixed; /* Fixe l'image pendant le scroll */
+background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+background-position: center; /* Centre la position de l'image */
+background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
+}
+.parallax1 {
+  background-image: url("https://www.codeur.com/tuto/wp-content/uploads/2022/02/p1.jpg");
+}
+.parallax2 {
+  background-image: url("https://www.codeur.com/tuto/wp-content/uploads/2022/02/p1.jpg");
 }
 @media (min-width:650px) {
   #signature{
