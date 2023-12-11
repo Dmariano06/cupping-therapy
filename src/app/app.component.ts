@@ -15,7 +15,15 @@ export class AppComponent {
     reservation: '',
   };
   isNavbarTransparent: boolean = true;
-
+  scrollTo(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      console.log(`Scrolling to section: ${sectionId}`);
+      section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.error(`Section not found: ${sectionId}`);
+    }
+  }
   @HostListener('window:scroll', [])
   onScroll() {
     this.isNavbarTransparent = window.scrollY < 50;
@@ -40,6 +48,7 @@ export class AppComponent {
     window.alert('Votre message a été envoyé avec succès ! Vous allez recevoir un mail de confirmation dans quelques instants. (Regardez bien vos spams) Nous recontacterons sous 24h pour la confirmation du rendez-vous');
     window.location.reload();
   }
+
   
   
 }

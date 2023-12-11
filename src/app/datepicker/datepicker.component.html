@@ -1,8 +1,31 @@
-
-<mat-form-field>
-  <mat-label>Choose a date</mat-label>
-  <input matInput [matDatepicker]="picker">
-  <mat-hint>MM/DD/YYYY</mat-hint>
-  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="firstName">Prénom:</label>
+    <input class="form-control" id="firstName" type="text" formControlName="firstName" required />
+  </div>
+  <div>
+    <label for="lastName">Nom:</label>
+    <input class="form-control" id="lastName" type="text" formControlName="lastName" required />
+  </div>
+  <div>
+    <label for="email">E-mail:</label>
+    <input class="form-control" id="email" type="email" formControlName="email" required />
+  </div>
+  <div>
+    <div>
+      <label for="selectedDate">Date:</label>
+      <input id="selectedDate" class="form-control" type="date" formControlName="selectedDate" required />
+    </div>
+    <div>
+        <label for="selectedTime">Heure:</label>
+        <input  class="form-control" id="selectedTime" type="time" formControlName="selectedTime" required />
+      </div>
+  </div>
+  <div>
+    <label for="message">Message:</label>
+    <textarea class="form-control" id="message" formControlName="message" rows="6" required></textarea>
+  </div>
+  <div>
+    <button class="btn btn-primary btn-xl text-uppercase" type="submit" [disabled]="!form.valid">Envoyer</button>
+  </div>
+</form>
