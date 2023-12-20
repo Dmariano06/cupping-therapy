@@ -9,11 +9,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'cupping_therapy';
-  formData = {
-    nom: '',
-    email: '',
-    reservation: '',
-  };
   isNavbarTransparent: boolean = true;
   scrollTo(sectionId: string) {
     const section = document.getElementById(sectionId);
