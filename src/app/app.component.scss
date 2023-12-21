@@ -11,11 +11,16 @@ nav:hover{
     }
   }
 }
+nav{
+  .nav-link:hover{
+    color: white !important;
+  }
+}
 
   @supports (background-image: url('../assets/img/accueil-site.webp')) {
     header {
       background-size: cover;
-      background: url('../assets/img/accueil-site.webp') center / cover no-repeat;
+      background: url('../assets/img/header.jpg') center / cover no-repeat;
 
     }
   }
@@ -119,6 +124,9 @@ p{
 .underline {
   position: relative;
   display: inline-block;
+}
+.active{
+  color: white !important;
 }
 
 .underline::after {
