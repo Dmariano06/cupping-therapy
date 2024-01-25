@@ -31,11 +31,6 @@ nav{
 
     }
   }
-  .third{
-    padding-top: 5px;
-  }
-
-  
 .navbar-toggler{
   outline: none !important;
   box-shadow: none !important;
@@ -143,6 +138,11 @@ background-color: #facc36;
 opacity: 0.8;
 }
 @media (min-width:650px) {
+  .third{
+    padding-top: 25px;
+  }
+
+  
   #signature{
     display: none;
   }
