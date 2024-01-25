@@ -137,10 +137,12 @@ border-radius: 5px;
 background-color: #facc36;
 opacity: 0.8;
 }
-@media (min-width:650px) {
+@media (max-width: 800px) {
   .third{
     padding-top: 25px;
   }
+}
+@media (min-width:650px) {
 
   
   #signature{
