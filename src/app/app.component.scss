@@ -16,21 +16,6 @@ nav{
     color: white !important;
   }
 }
-
-  @supports (background-image: url('../assets/img/accueil-site.webp')) {
-    header {
-      background-size: cover;
-      background: url('../assets/img/header.jpg') center / cover no-repeat;
-
-    }
-  }
-  
-  @supports not (background-image: url('../assets/img/accueil-site.webp')) {
-    header {
-      background: url('../assets/img/accueil\ site.jpg') center / cover no-repeat;
-
-    }
-  }
 .navbar-toggler{
   outline: none !important;
   box-shadow: none !important;
@@ -68,6 +53,7 @@ p{
   letter-spacing: 1px !important;
 }
 .fa{
+  padding-top: 4px;
   color: #facc36 !important;
 }
 .fa:hover{
